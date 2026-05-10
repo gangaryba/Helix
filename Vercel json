@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "helix9-gis",
+  "builds": [{"src": "index.html","use": "@vercel/static"}],
+  "routes": [{"src": "/(.*)", "dest": "/index.html"}],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {"key": "X-Powered-By", "value": "Gangary Intelligence Systems"},
+        {"key": "X-System", "value": "HELIX9-Reflex-AI"}
+      ]
+    }
+  ]
+}
